@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ $# -eq 0 ]]; then
+    java -jar /app/checkstyle.jar -c /google_checks.xml src/
+else
+    java -jar /app/checkstyle.jar -c /google_checks.xml "$@"
+fi
