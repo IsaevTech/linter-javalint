@@ -1,6 +1,7 @@
 # Java Linter
 
-[![Build Status](https://ci.isaev.tech/api/badges/IsaevTech/javalint/status.svg)](https://ci.isaev.tech/IsaevTech/javalint)
+[![Docker Image CI](https://github.com/IsaevTech/linter-javalint/actions/workflows/docker-image.yml/badge.svg)](https://github.com/IsaevTech/linter-javalint/actions/workflows/docker-image.yml)
+![Docker Pulls](https://img.shields.io/docker/pulls/ismv/linter-javalint)
 
 ## Usage
 
