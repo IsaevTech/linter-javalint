@@ -1,7 +1,7 @@
-FROM openjdk:8
-ARG VERSION=9.1
+FROM openjdk:17
+ARG VERSION=10.3.1
 WORKDIR /app
-RUN wget -q https://github.com/checkstyle/checkstyle/releases/download/checkstyle-${VERSION}/checkstyle-${VERSION}-all.jar -O checkstyle.jar
+RUN curl -L https://github.com/checkstyle/checkstyle/releases/download/checkstyle-${VERSION}/checkstyle-${VERSION}-all.jar -o checkstyle.jar
 COPY lint /usr/local/bin/lint
 WORKDIR /code
 CMD ["lint"]
